@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/homePage.css">
+    <script src="https://kit.fontawesome.com/e61e6130cc.js" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+    <title>Document</title>
+</head>
+<body>
+     <!--nav section start-->
+     <div class="nav-container">
+        <div class="logo">Nigsti`s <span>Design</span></div>
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars fa-xl"></i>
+            <i class="fa-solid fa-x" class="cls-menu-btn"></i>
+        </div>
+        <div class="menu" id="menu">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="/designs.html">Designs</a></li>
+                <li><a href="./index.html#campaign">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--nav end-->
+    <div class="design-container" id="design-container">
+        <div class="design-nav">
+            <div class="nav-headline">
+                <h2>Designs</h2>
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li><a class="filter-btn active" id="all">ALL</a></li>
+                    <li><a class="filter-btn" id="womens">WOMANS</a></li>
+                    <li><a class="filter-btn" id="mens">MENS</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="display">
+            <div class="design-display">
+           
+            </div>
+            <div class="notThedesign-display">
+               
+            </div>
+           
+        </div>
+        <div class="pagination">
+            <ul class="pages">
+                
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-container">
+        <div class="footer-about">
+            <p>
+                <h5>Nigist`s <span>Design</span></h5>
+                <br>
+                <em>We curate cutting-edge designs to elevate your
+                 style and bring it into the contemporary spotlight.
+                </em>
+                </p>
+        </div>
+        <div class="footer-contact">
+            <p>
+                contact us at: 
+                <a href="#">
+                    nigstisdesign@gmail.com
+                </a>
+            </p>
+        </div>
+    </div>
+        <div class="modal-container">
+            
+        </div>
+    </div>
+    <script src="./designs.js"></script>
+    
+</body>
+</html>

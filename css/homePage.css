@@ -1,0 +1,435 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.1s linear;
+}
+html{
+    scroll-behavior: smooth;
+}
+button{
+    cursor: pointer;
+}
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: maroon;
+    color: white;
+    padding: 5px;
+    height: 50px;
+}
+.nav-container ul li{
+    list-style: none;
+    display: inline-block;
+    cursor: pointer;
+}
+.nav-container ul li a:hover{
+    color: orange;
+}
+
+.hamburger-menu{
+    cursor: pointer;
+    display: none;
+}
+.nav-container ul li a{
+    text-decoration: none;
+    color: white;
+    margin-right: 15px;
+    font-size: 1.1rem;
+}
+.menu ul li a.active{
+    color: orange;
+}
+.logo{
+    font-size: 1.1rem;
+}
+.logo span{
+    color: orange;
+}
+.carasol{
+    position: relative;
+    overflow: hidden;
+}
+.home-text{
+    position: absolute;
+    bottom: 50%;
+    z-index: 99;
+    font-size: 1.2rem;
+    background: rgba(255, 255, 255, 0.5);
+    height: 70px;
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    overflow: hidden;
+}
+.slider{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 10s slider infinite;
+    transition: 1s ease;
+}
+.slider img{
+    width: 20%;
+    object-fit: cover;
+    height: 530px;
+    float: left;
+}
+@keyframes slider{
+    0%{
+       left: 0;
+    }
+    20%{
+        left: 0;   
+    }
+    25%{
+        left: -100%; 
+    }
+    45%{
+        left: -100%;  
+    }
+    50%{
+        left: -200%;
+    }
+    70%{
+        left: -200%;
+    }
+    75%{
+        left: -300%;
+    }
+    100%{
+        left: -300%;
+    }
+}
+
+/*campaign section start*/
+.campaign-container{
+    position: relative;
+    background: rgba(50.2, 0, 0, 0.5);
+    margin: 15px 50px;
+    display: flex;
+    
+    align-items: center;
+    height: 500px;
+
+}
+.campaign-card{
+    position: relative;
+    height: 500px;
+    background: yellow;
+}
+.campaign-card .copywrite{
+    font-size: 1.4rem;
+    font-weight: 800;
+    text-align: center;
+    color: #c49102; 
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    overflow: hidden;
+    transform: translate(50%, -50%);
+}
+.campaign-card img{
+    object-fit: cover;
+    width: 100%;
+   height: 100%;
+}
+
+.campaign-copy{
+    padding: 50px;
+    margin-left: 10px;
+    overflow: hidden;
+}
+.campaign-copy p{
+    margin: 10px;
+    line-height: 1.5;
+}
+.campaign-copy button{
+    background: maroon;
+    color: white;
+    font-size: 16px;
+    padding: 6px;
+    border: none;
+    border-radius: 8px;
+    margin: 20px;
+}
+.campaign-copy button:hover{
+    background: white;
+    color: maroon;
+    border: 1px maroon;
+    border-radius: 9px;
+}
+/*campaign section end*/
+
+/*design section start*/
+.nav-headline{
+    margin: 5px 12px;
+}
+.nav-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-menu ul li{
+    text-align: center;
+    list-style: none;
+    display: inline-block;
+    cursor: pointer;
+   
+}
+.nav-menu ul li a:hover{
+    color: orange;
+}
+.nav-menu ul li a.active{
+  background: orange;
+  color: white;
+}
+.nav-menu ul li a{
+    text-decoration: none;
+    color: black;
+    margin-right: 5px;
+    background: gray;
+    margin-top: 5px;
+    padding: 3px;
+    border-radius: 8px;
+}
+
+.display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.design-display{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(100px, 300px));
+    overflow: hidden;
+    margin-top: 10px;
+}
+.design-card{
+    position: relative;
+    margin-left: 5px;
+    height: 300px;
+}
+.design-card div{
+    position: absolute;
+    line-height: 2.5rem;
+    font-weight: bold;
+    width: 100%;
+    bottom: 0;
+    z-index: 99;
+    display: flex;
+    background: #00000080;
+    color: white;
+}
+.design-card button{
+    position: absolute;
+    line-height: 2.5rem;
+    bottom: 0;
+    display: flex;
+    background: maroon;
+    color: white;
+    padding: 5px;
+    border: none;
+    border-radius: 8px;
+    z-index: 999;
+    margin-left: 70%;
+    margin-bottom: 15px;
+    z-index: 999;
+}
+.design-card div:nth-child(2){
+    color: red;
+ }
+.design-card img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.pages li{
+    list-style: none;
+    display: inline-block;
+    background: gray;
+    text-align: center;
+    min-width: 25px;
+    padding: 2px 5px;
+    border-radius: 6px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.pages li.active{
+    background: orange;
+    color: white;
+}
+.pages li:hover{
+  transform: scale(1.1);
+}
+/*design section end*/
+.footer-container{
+    margin-top: 20px;
+    background: rgba(50.2, 0, 0, 0.5);
+    padding: 20px;
+    display: flex;
+    justify-content: space-around
+}
+.footer-container span{
+    color: orange;
+}
+.contact-container{
+    min-height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.contact{
+    background: rgba(50.2, 0, 0, 0.4);
+    padding: 20px;
+    width: 50%;
+    height: 450px;
+}
+.contact .contact-headline{
+    margin-bottom: 10px;
+
+}
+.contact input, textarea{
+    height: 35px;
+    margin-block: 10px;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    margin-inline: auto;
+    padding: 10px;
+}
+.contact textarea{
+    height: 115px;
+    margin-bottom: 25px;
+}
+
+.contact button{
+    width: 70px;
+    border: none;
+    border-radius: 15px;
+    text-align: center;
+    padding: 10px;
+}
+.contact button:hover{
+    background-color: rgba(50.2, 0, 0, 0.9);
+    color: white;
+}
+
+.modal-container{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.modal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    
+}
+.modal p{
+    font-size: 1.5rem;
+    line-height: 1.7;
+}
+.modal .close-btn{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/*home page design sample section*/
+
+.design-sample{
+    position: relative;
+    display: flex;
+    padding: 20px;
+}
+.design-sample img{
+    height: 400px;
+    width: 33%;
+}
+.design-sample .copy{
+    position: absolute;
+    background: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    bottom: 50%;
+    text-align: center;
+    overflow-x: hidden;
+}
+.design-sample .copy h1{
+    font-weight: bold;
+    font-size: 3rem;
+    color: rgba(50.2, 0, 0, 0.9);
+}
+
+@media (max-width: 800px){
+    .contact{
+        width: 70%;
+    }
+    .home-text{
+       font-size: 1rem;
+       line-height: 1.4;
+    }
+    .nav-container .menu{
+        position: fixed;
+        left: -100%;
+        background: maroon;
+        width: 100%;
+        height: 400px;
+        z-index: 9999;
+    }
+    .nav-container .menu.active{
+        top: 50px;
+        left: 0;
+    }
+    .nav-container ul li{
+        display: block;
+        font-size: 4rem;
+        margin: 20px;
+        text-align: center;
+    }
+ 
+    .hamburger-menu{
+        display: block;
+    }
+    
+    .hamburger-menu .fa-bars {
+        display: block;
+    }
+
+    .hamburger-menu .fa-x {
+        display: none;
+    }
+    .design-display{
+        grid-template-columns: repeat(3, minmax(100px, 300px));
+    }
+
+}
