@@ -431,5 +431,7 @@ button{
     .design-display{
         grid-template-columns: repeat(3, minmax(100px, 300px));
     }
-
+.campaign-card .copywrite{
+    font-size: 1rem;
+    }
 }
