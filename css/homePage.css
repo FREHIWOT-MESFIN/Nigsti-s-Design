@@ -431,7 +431,34 @@ button{
     .design-display{
         grid-template-columns: repeat(3, minmax(100px, 300px));
     }
-.campaign-card .copywrite{
-    font-size: 1rem;
+    .campaign-container{
+        margin: 15px 5px;
+    }
+    .campaign-card .copywrite{
+        font-size: 0.7rem;
+    }   
+    .campaign-copy{
+        padding: 10px;
+    }
+    .campaign-copy p{
+        font-size: 0.9rem;
+    }
+    .campaign-copy button{
+        background: maroon;
+        color: white;
+        font-size: 16px;
+        padding: 6px;
+        border: none;
+        border-radius: 8px;
+        margin: 20px;
+    }
+    .campaign-copy button:hover{
+        background: white;
+        color: maroon;
+        border: 1px maroon;
+        border-radius: 9px;
+    }
+    .emphasised{
+        display: none;
     }
 }
